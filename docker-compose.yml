@@ -1,0 +1,19 @@
+
+services:
+  api:
+    container_name: student-crud-api
+    build: ./student-crud-api/
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./useruploadedcontent/:/var/uploads/
+
+  nginx:
+    container_name: student-crud-nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./useruploadedcontent/:/var/uploads/
+      - ./student-crud/build/:/var/www/html/

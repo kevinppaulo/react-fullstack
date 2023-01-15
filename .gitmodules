@@ -1,0 +1,6 @@
+[submodule "student-crud-api"]
+	path = student-crud-api
+	url = git@github.com:kevinppaulo/react-crud-backend.git
+[submodule "student-crud-frontend"]
+	path = student-crud-frontend
+	url = git@github.com:kevinppaulo/react-crud.git
