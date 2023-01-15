@@ -10,7 +10,6 @@ Para acessar o app, visite: <https://react-fullstack.kevinpaulo.tech/>
 - Node.js
 - Java 17
 - Docker
-- Nginx
 
 ## Instalação
 
